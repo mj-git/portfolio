@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import bgImage from '../img/intro-bg.jpg';
-import Typed from 'typed.js';
+import bgImage from '../img/work-7.jpg';
+import Typed from 'react-typed';
 
 export default class Home extends Component {
-  subtitle = ['Web Programmer', 'UI Developer', 'Freelancer'];
-  typed = new Typed(this.el, {
-    strings: this.subtitle,
-    typeSpeed: 80,
-    loop: true,
-    backDelay: 1100,
-    backSpeed: 30
-  });
+  constructor(props) {
+    super(props);
+    this.el = React.createRef();
+  }
+  subtitle = [
+    'Human Being',
+    'Web Programmer',
+    'Sports Enthusiast',
+    'Freelancer'
+  ];
   render() {
     return (
       <div
@@ -24,11 +26,15 @@ export default class Home extends Component {
             <div className="container">
               <h1 className="intro-title mb-4">I am Mohit Jain</h1>
               <p className="intro-subtitle">
-                <span className="text-slider-items">
-                  CEO DevFolio,Web Developer,Web Designer,Frontend
-                  Developer,Graphic Designer
-                </span>
-                <strong className="text-slider" ref={el => this.el = el} />
+                <strong className="text-slider">
+                  <Typed
+                    strings={this.subtitle}
+                    typeSpeed={40}
+                    loop={true}
+                    backDelay={1100}
+                    backSpeed={30}
+                  />
+                </strong>
               </p>
             </div>
           </div>
