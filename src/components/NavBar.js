@@ -1,17 +1,41 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+import PropTypes from "prop-types";
 
 export default class NavBar extends Component {
+  state = {
+    navbar: "navbar-trans"
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+  handleScroll = () => {
+    this.setState({
+      navbar: window.pageYOffset > 50 ? "navbar-reduce" : "navbar-trans"
+    });
+  };
+  toggleNavbar = () => {};
+
   render() {
     return (
       <>
         <nav
-          className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
+          className={`navbar navbar-b navbar-expand-md fixed-top ${
+            this.state.navbar
+          }`}
           id="mainNav"
         >
           <div className="container">
-            <a className="navbar-brand js-scroll" href="#root">
-              DevFolio
-            </a>
+            <span className="navbar-brand" onClick={this.scrollToTop}>
+              Portfolio
+            </span>
             <button
               className="navbar-toggler collapsed"
               type="button"
@@ -20,6 +44,7 @@ export default class NavBar extends Component {
               aria-controls="navbarDefault"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={this.toggleNavbar}
             >
               <span />
               <span />
@@ -30,36 +55,21 @@ export default class NavBar extends Component {
               id="navbarDefault"
             >
               <ul className="navbar-nav">
-                <li className="nav-item">
-                  <a className="nav-link js-scroll active" href="#home">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link js-scroll" href="#about">
-                    About
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link js-scroll" href="#service">
-                    Services
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link js-scroll" href="#work">
-                    Work
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link js-scroll" href="#blog">
-                    Blog
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link js-scroll" href="#contact">
-                    Contact
-                  </a>
-                </li>
+                {this.props.items.map((item, index) => (
+                  <li className="nav-item" key={index}>
+                    <Link
+                      activeClass="active"
+                      className="nav-link"
+                      to={item.hash}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -68,3 +78,23 @@ export default class NavBar extends Component {
     );
   }
 }
+
+NavBar.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      hash: PropTypes.string.isRequired
+    })
+  )
+};
+
+NavBar.defaultProps = {
+  items: [
+    { name: "Home", hash: "home" },
+    { name: "About", hash: "about" },
+    { name: "Services", hash: "service" },
+    { name: "Work", hash: "work" },
+    { name: "Blog", hash: "blog" },
+    { name: "Contact", hash: "contact" }
+  ]
+};

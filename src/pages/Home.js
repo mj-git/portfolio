@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import bgImage from '../img/work-7.jpg';
-import Typed from 'react-typed';
+import React, { Component } from "react";
+import bgImage from "../img/work-7.jpg";
+import Typed from "react-typed";
 
 export default class Home extends Component {
   constructor(props) {
@@ -8,10 +8,10 @@ export default class Home extends Component {
     this.el = React.createRef();
   }
   subtitle = [
-    'Human Being',
-    'Web Programmer',
-    'Sports Enthusiast',
-    'Freelancer'
+    "Homo Sapien",
+    "Web Programmer",
+    "Sports Enthusiast",
+    "Freelancer"
   ];
   render() {
     return (
