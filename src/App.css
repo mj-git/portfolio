@@ -768,6 +768,10 @@ a:hover {
   margin-bottom: 0;
 }
 
+.counter-num .counter + .counter-text {
+  text-transform: uppercase;
+}
+
 /*======================================
 //--//-->   PORTFOLIO
 ======================================*/

@@ -4,10 +4,11 @@ import CounterBox from "../components/CounterBox";
 import {
   IoMdDesktop,
   IoIosCodeWorking,
-  IoMdCamera,
   IoIosPhonePortrait,
-  IoMdBrush,
-  IoIosCheckmark
+  IoIosCheckmark,
+  IoMdRibbon,
+  IoIosPeople,
+  IoIosCalendar
 } from "react-icons/io";
 import ServiceCard from "../components/ServiceCard";
 
@@ -66,59 +67,41 @@ Services.defaultProps = {
       icon: IoMdDesktop,
       title: "Web Design",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident."
+        "User focused design, Search Engine Optimization, Well-organized Content, Effective Calls to Action"
     },
     {
       icon: IoIosCodeWorking,
       title: "Web Development",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident."
-    },
-    {
-      icon: IoMdCamera,
-      title: "Photography",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident."
+        "Fast Loading Time, Component based development, Unit Testing, Integration Testing"
     },
     {
       icon: IoIosPhonePortrait,
       title: "Responsive Design",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident."
-    },
-    {
-      icon: IoMdBrush,
-      title: "Graphic Design",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident."
-    },
-    {
-      icon: IoMdBrush,
-      title: "Web Design",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident."
+        "Mobile Friendly Designs, Enhance Offline Browsing Experience, Effective Compression Techniques"
     }
   ],
   counters: [
     {
       icon: <IoIosCheckmark size="2em" style={{ strokeWidth: 15 }} />,
-      count: 10,
-      counterText: "Years of Experience"
+      count: 620,
+      counterText: "Freelancing Hours"
     },
     {
-      icon: <IoIosCheckmark />,
-      count: 10,
-      counterText: "Years of Experience"
+      icon: <IoMdRibbon size="1em" style={{ strokeWidth: 15 }} />,
+      count: 4,
+      counterText: "Awards Won"
     },
     {
-      icon: <IoIosCheckmark />,
-      count: 10,
-      counterText: "Years of Experience"
+      icon: <IoIosPeople />,
+      count: 8,
+      counterText: "Clients"
     },
     {
-      icon: <IoIosCheckmark />,
-      count: 10,
-      counterText: "Years of Experience"
+      icon: <IoIosCalendar />,
+      count: 5,
+      counterText: "Years Experience"
     }
   ]
 };
