@@ -1,21 +1,24 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3edb876c.chunk.css",
-    "main.js": "/portfolio/static/js/main.d02b9152.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.d02b9152.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.8a0ec422.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.8a0ec422.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
     "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
     "static/css/2.b14e48f8.chunk.css": "/portfolio/static/css/2.b14e48f8.chunk.css",
-    "static/js/2.7b851af6.chunk.js": "/portfolio/static/js/2.7b851af6.chunk.js",
-    "static/js/2.7b851af6.chunk.js.map": "/portfolio/static/js/2.7b851af6.chunk.js.map",
+    "static/js/2.b3bcec25.chunk.js": "/portfolio/static/js/2.b3bcec25.chunk.js",
+    "static/js/2.b3bcec25.chunk.js.map": "/portfolio/static/js/2.b3bcec25.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.27f95ada259b8dab64280af7b45feb69.js": "/portfolio/precache-manifest.27f95ada259b8dab64280af7b45feb69.js",
+    "precache-manifest.9f59797cd58b2f6a6299edd402ca5214.js": "/portfolio/precache-manifest.9f59797cd58b2f6a6299edd402ca5214.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.b14e48f8.chunk.css.map": "/portfolio/static/css/2.b14e48f8.chunk.css.map",
     "static/css/main.3edb876c.chunk.css.map": "/portfolio/static/css/main.3edb876c.chunk.css.map",
     "static/media/counters-bg.jpg": "/portfolio/static/media/counters-bg.fd1eda48.jpg",
     "static/media/font-awesome.css": "/portfolio/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/testimonial.JPG": "/portfolio/static/media/testimonial.e8a536fd.JPG",
+    "static/media/work-1.jpeg": "/portfolio/static/media/work-1.c22322d0.jpeg",
+    "static/media/work-2.jpg": "/portfolio/static/media/work-2.5380a495.jpg",
+    "static/media/work-3.png": "/portfolio/static/media/work-3.8a257b3a.png",
     "static/media/work-7.jpg": "/portfolio/static/media/work-7.36b2053b.jpg"
   }
 }
