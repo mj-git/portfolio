@@ -7,12 +7,12 @@ import logo3 from "../img/work-3.png";
 export default function Work() {
   const workDetails = [
     {
-      companyUrl: "https://www.infosys.com/",
-      companyLogo: logo1,
-      companyName: "Infosys",
-      designation: "Systems Engineer",
+      companyUrl: "https://www.mediaocean.com/",
+      companyLogo: logo3,
+      companyName: "Mediaocean",
+      designation: "Senior Software Developer",
       role:
-        "Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi."
+        "Develop and enhance features of several modules for the core integrated product for Agencies in the Advertising domain using ReactJs, Angular, Knockout"
     },
     {
       companyUrl: "https://www.amdocs.com/",
@@ -20,27 +20,24 @@ export default function Work() {
       companyName: "Amdocs",
       designation: "Software Developer",
       role:
-        "Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi."
+        "As a part of R & D team worked on the core products related to Telecom domain with tech stack including Backbone and Knockout."
     },
     {
-      companyUrl: "https://www.mediaocean.com/",
-      companyLogo: logo3,
-      companyName: "Mediaocean",
-      designation: "Senior Software Developer",
+      companyUrl: "https://www.infosys.com/",
+      companyLogo: logo1,
+      companyName: "Infosys",
+      designation: "Systems Engineer",
       role:
-        "Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi."
+        "Worked as Functional SAP consultant initially and then moved into Web Development projects and worked primarily on Core Javascript"
     }
   ];
   return (
-    <section id="blog" className="blog-mf sect-pt4 route">
+    <section id="work" className="blog-mf sect-pt4 route">
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
             <div className="title-box text-center">
               <h3 className="title-a">Professional Career</h3>
-              <p className="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
               <div className="line-mf" />
             </div>
           </div>
