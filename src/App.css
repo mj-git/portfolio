@@ -84,7 +84,6 @@ a:hover {
 
 .bg-image {
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -218,6 +217,10 @@ a:hover {
   margin: 0 15px 0 0;
   box-shadow: 0 0 0 3px #24b67e;
   transition: all 500ms ease;
+}
+
+.socials .ico-circle svg {
+  margin-bottom: 0.5rem;
 }
 
 .socials .ico-circle:hover {

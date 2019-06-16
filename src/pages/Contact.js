@@ -1,10 +1,18 @@
 import React from "react";
+import bgImg from "../img/overlay-bg.jpg";
+import {
+  IoLogoInstagram,
+  IoLogoFacebook,
+  IoLogoTwitter,
+  IoLogoLinkedin,
+  IoIosMail
+} from "react-icons/io";
 
 export default function Contact() {
   return (
     <section
       className="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(img/overlay-bg.jpg)"
+      style={{ backgroundImage: `url(${bgImg})` }}
     >
       <div className="overlay-mf" />
       <div className="container">
@@ -12,141 +20,66 @@ export default function Contact() {
           <div className="col-sm-12">
             <div className="contact-mf">
               <div id="contact" className="box-shadow-full">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="title-box-2">
-                      <h5 className="title-left">Send Message Us</h5>
-                    </div>
-                    <div>
-                      <form
-                        action=""
-                        method="post"
-                        role="form"
-                        className="contactForm"
-                      >
-                        <div id="sendmessage">
-                          Your message has been sent. Thank you!
-                        </div>
-                        <div id="errormessage" />
-                        <div className="row">
-                          <div className="col-md-12 mb-3">
-                            <div className="form-group">
-                              <input
-                                type="text"
-                                name="name"
-                                className="form-control"
-                                id="name"
-                                placeholder="Your Name"
-                                data-rule="minlen:4"
-                                data-msg="Please enter at least 4 chars"
-                              />
-                              <div className="validation" />
-                            </div>
-                          </div>
-                          <div className="col-md-12 mb-3">
-                            <div className="form-group">
-                              <input
-                                type="email"
-                                className="form-control"
-                                name="email"
-                                id="email"
-                                placeholder="Your Email"
-                                data-rule="email"
-                                data-msg="Please enter a valid email"
-                              />
-                              <div className="validation" />
-                            </div>
-                          </div>
-                          <div className="col-md-12 mb-3">
-                            <div className="form-group">
-                              <input
-                                type="text"
-                                className="form-control"
-                                name="subject"
-                                id="subject"
-                                placeholder="Subject"
-                                data-rule="minlen:4"
-                                data-msg="Please enter at least 8 chars of subject"
-                              />
-                              <div className="validation" />
-                            </div>
-                          </div>
-                          <div className="col-md-12 mb-3">
-                            <div className="form-group">
-                              <textarea
-                                className="form-control"
-                                name="message"
-                                rows="5"
-                                data-rule="required"
-                                data-msg="Please write something for us"
-                                placeholder="Message"
-                              />
-                              <div className="validation" />
-                            </div>
-                          </div>
-                          <div className="col-md-12">
-                            <button
-                              type="submit"
-                              className="button button-a button-big button-rouded"
-                            >
-                              Send Message
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                <div className="row justify-content-md-center">
                   <div className="col-md-6">
                     <div className="title-box-2 pt-4 pt-md-0">
                       <h5 className="title-left">Get in Touch</h5>
                     </div>
                     <div className="more-info">
                       <p className="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Facilis dolorum dolorem soluta quidem expedita aperiam
-                        aliquid at. Totam magni ipsum suscipit amet? Autem nemo
-                        esse laboriosam ratione nobis mollitia inventore?
+                        I am open for work. If you think there is something we
+                        can build together or if you want to get the job done or
+                        if you are looking out for a collaborator, please feel
+                        free to reach out.
                       </p>
                       <ul className="list-ico">
                         <li>
-                          <span className="ion-ios-location" /> 329 WASHINGTON
-                          ST BOSTON, MA 02108
-                        </li>
-                        <li>
-                          <span className="ion-ios-telephone" /> (617) 557-0089
-                        </li>
-                        <li>
-                          <span className="ion-email" /> contact@example.com
+                          <IoIosMail />{" "}
+                          <a
+                            href="mailto:mohit.in.reallife@gmail.com"
+                            target="_top"
+                          >
+                            mohit.in.reallife@gmail.com
+                          </a>
                         </li>
                       </ul>
                     </div>
                     <div className="socials">
                       <ul>
                         <li>
-                          <a href="">
+                          <a
+                            href="https://www.instagram.com/mohit.ka.insta/"
+                            target="blank"
+                          >
                             <span className="ico-circle">
-                              <i className="ion-social-facebook" />
+                              <IoLogoInstagram />
                             </span>
                           </a>
                         </li>
                         <li>
-                          <a href="">
+                          <a
+                            href="https://www.facebook.com/mohit.jain.75098"
+                            target="blank"
+                          >
                             <span className="ico-circle">
-                              <i className="ion-social-instagram" />
+                              <IoLogoFacebook />
                             </span>
                           </a>
                         </li>
                         <li>
-                          <a href="">
+                          <a href="https://twitter.com/mj2112" target="blank">
                             <span className="ico-circle">
-                              <i className="ion-social-twitter" />
+                              <IoLogoTwitter />
                             </span>
                           </a>
                         </li>
                         <li>
-                          <a href="">
+                          <a
+                            href="https://www.linkedin.com/in/ui-master/"
+                            target="blank"
+                          >
                             <span className="ico-circle">
-                              <i className="ion-social-pinterest" />
+                              <IoLogoLinkedin />
                             </span>
                           </a>
                         </li>
@@ -165,13 +98,9 @@ export default function Contact() {
             <div className="col-sm-12">
               <div className="copyright-box">
                 <p className="copyright">
-                  &copy; Copyright <strong>DevFolio</strong>. All Rights
-                  Reserved
+                  &copy; Copyright <strong>Mohit Jain</strong>{" "}
+                  {new Date().getFullYear()}
                 </p>
-                <div className="credits">
-                  Designed by{" "}
-                  <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                </div>
               </div>
             </div>
           </div>

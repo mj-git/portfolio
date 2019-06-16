@@ -94,7 +94,6 @@ NavBar.defaultProps = {
     { name: "About", hash: "about" },
     { name: "Services", hash: "service" },
     { name: "Work", hash: "work" },
-    { name: "Blog", hash: "blog" },
     { name: "Contact", hash: "contact" }
   ]
 };
